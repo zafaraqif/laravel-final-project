@@ -17,11 +17,6 @@ use App\Http\Controllers\deleteControl;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
 //Admin
 
 Route::get("/", [homeControl::class, "index"]);
@@ -57,7 +52,7 @@ Route::post("update/update-project", [updateControl::class, "updateProjects"]);
 Route::view("/test", "test");
 
 
-//Klassy Dashboard
+//Dahboard Auth
 
 Route::get('/dashboard', function () {
     return view('dashboard');
