@@ -47,11 +47,6 @@ Route::get("/update/{id}", [updateControl::class, "viewUpdate"]);
 Route::post("update/update-project", [updateControl::class, "updateProjects"]);
 
 
-//Test
-
-Route::view("/test", "test");
-
-
 //Dahboard Auth
 
 Route::get('/dashboard', function () {
